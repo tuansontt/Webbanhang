@@ -1,0 +1,36 @@
+﻿@model IEnumerable<WebSiteBanHang.Models.KhachHang>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index1</title>
+</head>
+<body>
+    <div>
+        <table border="1">
+            <tr>
+                <td>Ma Khach Hang</td>
+                <td>Ten Khach hang</td>
+                <td>Dia Chi</td>
+                <td>Email</td>
+                <td>So dien thoai</td>
+                @foreach (var item in Model)
+                {
+            <tr>
+                <td>@item.MaKH</td>
+                <td>@item.TenKH</td>
+                <td>@item.DiaChi</td>
+                <td>@item.Email</td>
+                <td>@item.SoDienThoai</td>
+            </tr>
+                }
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

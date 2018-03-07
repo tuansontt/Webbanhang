@@ -1,0 +1,15 @@
+﻿@*@using WebSiteBanHang.Models;*@
+@model IEnumerable<WebSiteBanHang.Models.ThanhVien>
+@{
+    ViewBag.Title = "GroupDuLieu";
+}
+
+@foreach (var GroupDL in Model.GroupBy(n => n.LoaiThanhVien))
+{
+    <div><b>@GroupDL.Key.TenLoai</b></div>
+    foreach (var item in GroupDL)
+    {
+        <p>@item.TaiKhoan</p>
+    }
+}
+
