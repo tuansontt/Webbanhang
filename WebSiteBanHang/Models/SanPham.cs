@@ -33,6 +33,7 @@ namespace WebSiteBanHang.Models
         public Nullable<int> LuotXem { get; set; }
         public Nullable<int> LuotBinhChon { get; set; }
         public Nullable<int> LuotBinhLuan { get; set; }
+        public Nullable<int> SoLanMua { get; set; }
         public Nullable<int> Moi { get; set; }
         public Nullable<int> MaNCC { get; set; }
         public Nullable<int> MaNSX { get; set; }
