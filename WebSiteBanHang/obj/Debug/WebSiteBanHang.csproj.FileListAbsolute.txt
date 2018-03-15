@@ -14,6 +14,7 @@ D:\ASP.net MVC\WebSiteBanHang\WebSiteBanHang\bin\roslyn\VBCSCompiler.exe.config
 D:\ASP.net MVC\WebSiteBanHang\WebSiteBanHang\bin\WebSiteBanHang.dll.config
 D:\ASP.net MVC\WebSiteBanHang\WebSiteBanHang\bin\WebSiteBanHang.dll
 D:\ASP.net MVC\WebSiteBanHang\WebSiteBanHang\bin\WebSiteBanHang.pdb
+D:\ASP.net MVC\WebSiteBanHang\WebSiteBanHang\bin\CaptchaMvc.dll
 D:\ASP.net MVC\WebSiteBanHang\WebSiteBanHang\bin\EntityFramework.dll
 D:\ASP.net MVC\WebSiteBanHang\WebSiteBanHang\bin\EntityFramework.SqlServer.dll
 D:\ASP.net MVC\WebSiteBanHang\WebSiteBanHang\bin\Microsoft.AI.Agent.Intercept.dll
@@ -31,6 +32,8 @@ D:\ASP.net MVC\WebSiteBanHang\WebSiteBanHang\bin\System.Web.Razor.dll
 D:\ASP.net MVC\WebSiteBanHang\WebSiteBanHang\bin\System.Web.Webpages.Deployment.dll
 D:\ASP.net MVC\WebSiteBanHang\WebSiteBanHang\bin\System.Web.Webpages.dll
 D:\ASP.net MVC\WebSiteBanHang\WebSiteBanHang\bin\System.Web.Webpages.Razor.dll
+D:\ASP.net MVC\WebSiteBanHang\WebSiteBanHang\bin\CaptchaMvc.pdb
+D:\ASP.net MVC\WebSiteBanHang\WebSiteBanHang\bin\CaptchaMvc.xml
 D:\ASP.net MVC\WebSiteBanHang\WebSiteBanHang\bin\EntityFramework.xml
 D:\ASP.net MVC\WebSiteBanHang\WebSiteBanHang\bin\EntityFramework.SqlServer.xml
 D:\ASP.net MVC\WebSiteBanHang\WebSiteBanHang\bin\Microsoft.AI.DependencyCollector.xml
@@ -45,6 +48,6 @@ D:\ASP.net MVC\WebSiteBanHang\WebSiteBanHang\bin\System.Web.Webpages.Deployment.
 D:\ASP.net MVC\WebSiteBanHang\WebSiteBanHang\bin\System.Web.Webpages.Razor.xml
 D:\ASP.net MVC\WebSiteBanHang\WebSiteBanHang\bin\System.Web.Helpers.xml
 D:\ASP.net MVC\WebSiteBanHang\WebSiteBanHang\bin\System.Web.Mvc.xml
-D:\ASP.net MVC\WebSiteBanHang\WebSiteBanHang\obj\Debug\WebSiteBanHang.csprojResolveAssemblyReference.cache
 D:\ASP.net MVC\WebSiteBanHang\WebSiteBanHang\obj\Debug\WebSiteBanHang.dll
 D:\ASP.net MVC\WebSiteBanHang\WebSiteBanHang\obj\Debug\WebSiteBanHang.pdb
+D:\ASP.net MVC\WebSiteBanHang\WebSiteBanHang\obj\Debug\WebSiteBanHang.csprojResolveAssemblyReference.cache

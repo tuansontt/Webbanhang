@@ -44,6 +44,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CaptchaMvc, Version=2.5.0.0, Culture=neutral, PublicKeyToken=fe46ad421dd3b0e6, processorArchitecture=MSIL">
+      <HintPath>..\packages\CaptchaMvc.Mvc5.1.5.0\lib\net45-full\CaptchaMvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
       <Private>True</Private>
@@ -138,6 +142,11 @@
     <Content Include="Content\css\flexslider.css" />
     <Content Include="Content\css\memenu.css" />
     <Content Include="Content\css\style.css" />
+    <Content Include="Content\HinhAnhSP\0201_Sonyvaiopro13-1.jpg" />
+    <Content Include="Content\HinhAnhSP\1-141023232635.jpg" />
+    <Content Include="Content\HinhAnhSP\150608_iphone_concept_1.jpg" />
+    <Content Include="Content\HinhAnhSP\321321.jpg" />
+    <Content Include="Content\HinhAnhSP\324493-sony-vaio-pro-11.jpg" />
     <Content Include="Content\HinhAnhSP\ACER-2215i.png" />
     <Content Include="Content\HinhAnhSP\AcerA1-810-2CW-316T.png" />
     <Content Include="Content\HinhAnhSP\AcerA1-811-G2CG-316T.png" />
@@ -173,6 +182,8 @@
     <Content Include="Content\HinhAnhSP\AppleMD232ZP-A.png" />
     <Content Include="Content\HinhAnhSP\ASUS-S1750.png" />
     <Content Include="Content\HinhAnhSP\Asus10-ME102A.png" />
+    <Content Include="Content\HinhAnhSP\asus3.jpg" />
+    <Content Include="Content\HinhAnhSP\asus4.png" />
     <Content Include="Content\HinhAnhSP\AsusF451CA-VX123D.png" />
     <Content Include="Content\HinhAnhSP\ASUSFONEPADME371MG.png" />
     <Content Include="Content\HinhAnhSP\AsusME175CG-8G.png" />
@@ -191,6 +202,9 @@
     <Content Include="Content\HinhAnhSP\AsusX450LC-WX035.png" />
     <Content Include="Content\HinhAnhSP\AsusX550CC-XO032D.png" />
     <Content Include="Content\HinhAnhSP\AsusX550LD-XX144D.png" />
+    <Content Include="Content\HinhAnhSP\asus_1.jpg" />
+    <Content Include="Content\HinhAnhSP\asus_2.png" />
+    <Content Include="Content\HinhAnhSP\b31.jpg" />
     <Content Include="Content\HinhAnhSP\Blackberry9220.png" />
     <Content Include="Content\HinhAnhSP\Blackberry9320.png" />
     <Content Include="Content\HinhAnhSP\Blackberry9790.png" />
@@ -198,6 +212,16 @@
     <Content Include="Content\HinhAnhSP\BlackberryQ10.png" />
     <Content Include="Content\HinhAnhSP\BlackberryZ10.png" />
     <Content Include="Content\HinhAnhSP\BlackberryZ30.png" />
+    <Content Include="Content\HinhAnhSP\cubotvip.png" />
+    <Content Include="Content\HinhAnhSP\cubot_x15_1.jpg" />
+    <Content Include="Content\HinhAnhSP\cubot_x15_2.jpg" />
+    <Content Include="Content\HinhAnhSP\cubot_x15_3.jpg" />
+    <Content Include="Content\HinhAnhSP\cubot_x15_4.jpg" />
+    <Content Include="Content\HinhAnhSP\cubot_x15_5.jpg" />
+    <Content Include="Content\HinhAnhSP\cubox15_1.png" />
+    <Content Include="Content\HinhAnhSP\cubox15_2.png" />
+    <Content Include="Content\HinhAnhSP\cubox15_3.png" />
+    <Content Include="Content\HinhAnhSP\cubox15_4.png" />
     <Content Include="Content\HinhAnhSP\DELL-11721PS.png" />
     <Content Include="Content\HinhAnhSP\DELL-9943XL.png" />
     <Content Include="Content\HinhAnhSP\DELL14-3437.png" />
@@ -210,6 +234,7 @@
     <Content Include="Content\HinhAnhSP\DELL3440.png" />
     <Content Include="Content\HinhAnhSP\DELLN3437A.png" />
     <Content Include="Content\HinhAnhSP\DELLN5437A.png" />
+    <Content Include="Content\HinhAnhSP\design_hero.jpg" />
     <Content Include="Content\HinhAnhSP\GalaxyG7102.png" />
     <Content Include="Content\HinhAnhSP\GalaxyK-Zoom.png" />
     <Content Include="Content\HinhAnhSP\GalaxyN9000.png" />
@@ -255,6 +280,19 @@
     <Content Include="Content\HinhAnhSP\HTCONE-GOLD-32G.png" />
     <Content Include="Content\HinhAnhSP\HTCONE-M8.png" />
     <Content Include="Content\HinhAnhSP\HTCSV.png" />
+    <Content Include="Content\HinhAnhSP\htc_one_1.JPG" />
+    <Content Include="Content\HinhAnhSP\htc_one_1.png" />
+    <Content Include="Content\HinhAnhSP\htc_one_2.jpg" />
+    <Content Include="Content\HinhAnhSP\htc_one_2.png" />
+    <Content Include="Content\HinhAnhSP\htc_one_3.jpg" />
+    <Content Include="Content\HinhAnhSP\htc_one_3.png" />
+    <Content Include="Content\HinhAnhSP\htc_one_4.jpg" />
+    <Content Include="Content\HinhAnhSP\htc_one_4.png" />
+    <Content Include="Content\HinhAnhSP\htc_one_5.jpg" />
+    <Content Include="Content\HinhAnhSP\htc_one_6.jpg" />
+    <Content Include="Content\HinhAnhSP\htc_one_7.jpg" />
+    <Content Include="Content\HinhAnhSP\htc_one_8.JPG" />
+    <Content Include="Content\HinhAnhSP\ipad air blue.jpg" />
     <Content Include="Content\HinhAnhSP\Ipad-ME840TH.png" />
     <Content Include="Content\HinhAnhSP\IpadAir-32G.png" />
     <Content Include="Content\HinhAnhSP\IpadAir-Cellular-128G.png" />
@@ -266,6 +304,12 @@
     <Content Include="Content\HinhAnhSP\IpadMini-Cellular-16G.png" />
     <Content Include="Content\HinhAnhSP\IpadMini-Cellular-32G.png" />
     <Content Include="Content\HinhAnhSP\IpadMini-Cellular-64G.png" />
+    <Content Include="Content\HinhAnhSP\ipad_air_1.png" />
+    <Content Include="Content\HinhAnhSP\ipad_air_2.png" />
+    <Content Include="Content\HinhAnhSP\ipad_air_3.png" />
+    <Content Include="Content\HinhAnhSP\ipad_air_4.png" />
+    <Content Include="Content\HinhAnhSP\iphone-6-201421010614.jpg" />
+    <Content Include="Content\HinhAnhSP\iPhone-7-Images-8.jpg" />
     <Content Include="Content\HinhAnhSP\Iphone4-8G.png" />
     <Content Include="Content\HinhAnhSP\Iphone4S-8G.png" />
     <Content Include="Content\HinhAnhSP\Iphone5-16G.png" />
@@ -275,6 +319,10 @@
     <Content Include="Content\HinhAnhSP\Iphone5S-16G.PNG" />
     <Content Include="Content\HinhAnhSP\Iphone5S-32G-GOLD.png" />
     <Content Include="Content\HinhAnhSP\Iphone5S-64G.PNG" />
+    <Content Include="Content\HinhAnhSP\iphone_1.png" />
+    <Content Include="Content\HinhAnhSP\iphone_2.png" />
+    <Content Include="Content\HinhAnhSP\iphone_3.png" />
+    <Content Include="Content\HinhAnhSP\iphone_4.png" />
     <Content Include="Content\HinhAnhSP\LGG-686.png" />
     <Content Include="Content\HinhAnhSP\LGG-D682.png" />
     <Content Include="Content\HinhAnhSP\LGG-E988.png" />
@@ -287,6 +335,22 @@
     <Content Include="Content\HinhAnhSP\LGL90.png" />
     <Content Include="Content\HinhAnhSP\LGOptimusSolE730.png" />
     <Content Include="Content\HinhAnhSP\Lumia920.png" />
+    <Content Include="Content\HinhAnhSP\m9plus.png" />
+    <Content Include="Content\HinhAnhSP\MacBook-Air-1024x515.png" />
+    <Content Include="Content\HinhAnhSP\macbook-air-retina.jpg" />
+    <Content Include="Content\HinhAnhSP\macbook_1.png" />
+    <Content Include="Content\HinhAnhSP\macbook_2.png" />
+    <Content Include="Content\HinhAnhSP\macbook_3.png" />
+    <Content Include="Content\HinhAnhSP\macbook_4.png" />
+    <Content Include="Content\HinhAnhSP\MacBook_air_11_550.jpg" />
+    <Content Include="Content\HinhAnhSP\macbook_pro_1.png" />
+    <Content Include="Content\HinhAnhSP\macbook_pro_2.png" />
+    <Content Include="Content\HinhAnhSP\macbook_pro_3.png" />
+    <Content Include="Content\HinhAnhSP\macbook_pro_4.png" />
+    <Content Include="Content\HinhAnhSP\macpro.png" />
+    <Content Include="Content\HinhAnhSP\mac_air_1.png" />
+    <Content Include="Content\HinhAnhSP\maxresdefault.jpg" />
+    <Content Include="Content\HinhAnhSP\New-Samsung-Rumors.jpg" />
     <Content Include="Content\HinhAnhSP\NokiaLumia-1020.png" />
     <Content Include="Content\HinhAnhSP\NokiaLumia-1320-2.png" />
     <Content Include="Content\HinhAnhSP\NokiaLumia-1320.png" />
@@ -297,7 +361,10 @@
     <Content Include="Content\HinhAnhSP\NokiaLumia-920.png" />
     <Content Include="Content\HinhAnhSP\NokiaLumia-925.png" />
     <Content Include="Content\HinhAnhSP\NokiaX.png" />
+    <Content Include="Content\HinhAnhSP\perfektes-Smartphone_qu.jpg" />
+    <Content Include="Content\HinhAnhSP\pre-order-iphone6.jpg" />
     <Content Include="Content\HinhAnhSP\Samsung-4401s.png" />
+    <Content Include="Content\HinhAnhSP\samsung-galaxy-tab-s.jpg" />
     <Content Include="Content\HinhAnhSP\Samsung300E7A-S03.png" />
     <Content Include="Content\HinhAnhSP\Samsung5-535U3X.png" />
     <Content Include="Content\HinhAnhSP\Samsung900X3A.png" />
@@ -310,6 +377,9 @@
     <Content Include="Content\HinhAnhSP\SamsungNP700Z3A-S01US.png" />
     <Content Include="Content\HinhAnhSP\SamsungNP900X3C.png" />
     <Content Include="Content\HinhAnhSP\SamsungXE700T1C-A01VN.png" />
+    <Content Include="Content\HinhAnhSP\Samsung_Note_Pro_3_0_0 %281%29.jpg" />
+    <Content Include="Content\HinhAnhSP\sony-vaio-sve-1513b1ew.jpg" />
+    <Content Include="Content\HinhAnhSP\sony-vaio-T14_Silver-2.jpg" />
     <Content Include="Content\HinhAnhSP\Sony-Vio7431.png" />
     <Content Include="Content\HinhAnhSP\SonyVaio-SVF14217SGB.png" />
     <Content Include="Content\HinhAnhSP\SonyVaio-SVF1421DSGB.png" />
@@ -336,8 +406,22 @@
     <Content Include="Content\HinhAnhSP\SONYXPERIAZ-SGP321.png" />
     <Content Include="Content\HinhAnhSP\SonyXperiaZ.png" />
     <Content Include="Content\HinhAnhSP\SQL.txt" />
+    <Content Include="Content\HinhAnhSP\tablet_ss_1.png" />
+    <Content Include="Content\HinhAnhSP\tablet_ss_2.png" />
+    <Content Include="Content\HinhAnhSP\tablet_ss_3.png" />
     <Content Include="Content\HinhAnhSP\TOSHIBA-SYM0510.png" />
+    <Content Include="Content\HinhAnhSP\Ultimate-Smartphone-01 %281%29.jpg" />
+    <Content Include="Content\HinhAnhSP\Ultimate-Smartphone-01.jpg" />
+    <Content Include="Content\HinhAnhSP\untilmate_phone_1.png" />
+    <Content Include="Content\HinhAnhSP\untilmate_phone_2.png" />
+    <Content Include="Content\HinhAnhSP\untilmate_phone_3.png" />
+    <Content Include="Content\HinhAnhSP\untilmate_phone_4.jpg" />
+    <Content Include="Content\HinhAnhSP\vaio_1.png" />
+    <Content Include="Content\HinhAnhSP\vaio_2.png" />
+    <Content Include="Content\HinhAnhSP\vaio_3.png" />
+    <Content Include="Content\HinhAnhSP\vaio_4.png" />
     <Content Include="Content\images\1.jpg" />
+    <Content Include="Content\images\25.gif" />
     <Content Include="Content\images\adm.png" />
     <Content Include="Content\images\b1.jpg" />
     <Content Include="Content\images\b2.jpg" />
@@ -413,14 +497,18 @@
     <Content Include="Models\QuanLyBanHangModel.edmx.diagram">
       <DependentUpon>QuanLyBanHangModel.edmx</DependentUpon>
     </Content>
+    <Content Include="ClassDiagram1.cd" />
     <None Include="scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="scripts\jquery-1.10.2.js" />
     <Content Include="scripts\jquery-1.10.2.min.js" />
+    <Content Include="scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="scripts\jquery.unobtrusive-ajax.min.js" />
     <Content Include="scripts\modernizr-2.6.2.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\DemoAjaxController.cs" />
     <Compile Include="Controllers\DemoCssController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\KhachHangController.cs" />
@@ -501,10 +589,18 @@
     <Content Include="Views\Layout\HomeLayout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\DemoCss\Demo.cshtml" />
-    <Content Include="Views\Layout\LoginLayout.cshtml" />
-    <Content Include="Views\SanPham\SanPham1.cshtml" />
-    <Content Include="Views\SanPham\SanPham2.cshtml" />
-    <Content Include="Views\SanPham\PartialSanPham.cshtml" />
+    <Content Include="Views\Layout\Product.cshtml" />
+    <Content Include="Views\DemoAjax\DemoAjax.cshtml" />
+    <Content Include="Views\DemoAjax\AjaxJquery.cshtml" />
+    <Content Include="Views\DemoAjax\ActionAjax.cshtml" />
+    <Content Include="Views\DemoAjax\BeginFAjax.cshtml" />
+    <Content Include="Views\SanPham\SanPhamStyle1Partial.cshtml" />
+    <Content Include="Views\SanPham\SanPhamStyle2Partial.cshtml" />
+    <Content Include="Views\Home\MenuPartial.cshtml" />
+    <Content Include="Views\SanPham\XemSanPham.cshtml" />
+    <Content Include="Views\Home\MenuNgangPartial.cshtml" />
+    <Content Include="Views\SanPham\SanPham.cshtml" />
+    <Content Include="Views\Home\DangKy.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

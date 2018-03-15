@@ -1,0 +1,127 @@
+﻿@using WebSiteBanHang.Models;
+@model IEnumerable<SanPham>
+
+
+<div class="col-md-3 product-price">
+
+    <div class="rsidebar span_1_of_left">
+        <div class="of-left">
+            <h3 class="cate">Categories</h3>
+        </div>
+        <ul class="menu">
+            <li class="item1">
+                @foreach (var GroupItem in Model.GroupBy(n => n.LoaiSanPham))
+                {
+                    if (GroupItem.Key != null)
+                    {
+                        <a href="#">@GroupItem.Key.TenLoai </a>
+                        <ul class="cute">
+                            @foreach (var item in GroupItem.GroupBy(n => n.NhaSanXuat))
+                    {
+                        if (item.Key != null)
+                        {
+                                    <li class="subitem1"><a href="@Url.RouteUrl("thuonghieu",new {  @maloai =GroupItem.Key.MaLoaiSP,@mansx=item.Key.MaNSX})">@item.Key.TenNSX</a></li>
+                                }
+                            }
+                        </ul>
+                    }
+                }
+            </li>
+
+        </ul>
+    </div>
+    <!--initiate accordion-->
+    <script type="text/javascript">
+        $(function () {
+            var menu_ul = $('.menu > li > ul'),
+                   menu_a = $('.menu > li > a');
+            menu_ul.hide();
+            menu_a.click(function (e) {
+                e.preventDefault();
+                if (!$(this).hasClass('active')) {
+                    menu_a.removeClass('active');
+                    menu_ul.filter(':visible').slideUp('normal');
+                    $(this).addClass('active').next().stop(true, true).slideDown('normal');
+                } else {
+                    $(this).removeClass('active');
+                    $(this).next().stop(true, true).slideUp('normal');
+                }
+            });
+
+        });
+    </script>
+    <!---->
+    <div class="product-middle">
+
+        <div class="fit-top">
+            <h6 class="shop-top">Lorem Ipsum</h6>
+            <a href="#" class="shop-now">SHOP NOW</a>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <div class="sellers">
+        <div class="of-left-in">
+            <h3 class="tag">Tags</h3>
+        </div>
+        <div class="tags">
+            <ul>
+                <li><a href="#">design</a></li>
+                <li><a href="#">fashion</a></li>
+                <li><a href="#">lorem</a></li>
+                <li><a href="#">dress</a></li>
+                <li><a href="#">fashion</a></li>
+                <li><a href="#">dress</a></li>
+                <li><a href="#">design</a></li>
+                <li><a href="#">dress</a></li>
+                <li><a href="#">design</a></li>
+                <li><a href="#">fashion</a></li>
+                <li><a href="#">lorem</a></li>
+                <li><a href="#">dress</a></li>
+
+                <div class="clearfix"> </div>
+            </ul>
+
+        </div>
+
+    </div>
+    <!---->
+    <div class="product-bottom">
+        <div class="of-left-in">
+            <h3 class="best">Best Sellers</h3>
+        </div>
+        @foreach (var item in Model.Take(2))
+        {
+            <div class="product-go">
+                <div class="fashion-grid">
+                    <a href="@Url.RouteUrl("xemsanpham",new { @tensp = item.TenSP,@id=item.MaSP})"><img class="img-responsive " src="@Url.Content("~/Content/HinhAnhSP/" + item.HinhAnh)" alt=""></a>
+
+                </div>
+                <div class=" fashion-grid1">
+                    <h6 class="best2" style="text-overflow:ellipsis">
+                        <a href="@Url.RouteUrl("xemsanpham",new { @tensp = item.TenSP,@id=item.MaSP})">
+                            @Html.Raw(item.TenSP)
+                        </a>
+                    </h6>
+
+                    <span class="price-in1"> @item.DonGia.Value.ToString("#,##") VND</span>
+                </div>
+
+                <div class="clearfix"> </div>
+            </div>
+        }
+
+    </div>
+    <div class="per1">
+        @foreach (var item in Model.Take(1))
+        {
+            <a href="@Url.RouteUrl("xemsanpham", new { @tensp = item.TenSP, @id = item.MaSP })">
+                <img class="img-responsive" src="@Url.Content("~/Content/HinhAnhSP/" + item.HinhAnh)" style="width:255px;height:296px" alt="">
+                <div class="six1">
+                    <h4>DISCOUNT</h4>
+                    <p>Up to</p>
+                    <span>60%</span>
+                </div>
+            </a>
+        }
+    </div>
+</div>

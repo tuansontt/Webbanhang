@@ -14,9 +14,25 @@ namespace WebSiteBanHang
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                name: "trangchu",
+                url: "trang-chu",
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
+                name: "xemsanpham",
+                url: "{tensp}-{id}",
+                defaults: new { controller = "SanPham", action = "XemSanPham", id = UrlParameter.Optional }
+            );
+            routes.MapRoute(
+                 name: "thuonghieu",
+                 url: "thuong-hieu/{maloai}",
+                 defaults: new { controller = "SanPham", action = "SanPham", id = UrlParameter.Optional }
+             );
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "DemoCss", action = "Demo", id = UrlParameter.Optional }
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
         }
     }

@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewBag.Title = "DemoAjax";
+    Layout = "~/Views/Layout/HomeLayout.cshtml";
+    <script src="~/Content/js/jquery.min.js"></script>
+}
+@*Cách 1 load Ajax bằng ActionLink*@
+
+@*@Ajax.ActionLink("Demo Ajax MVC", "ActionLink", new AjaxOptions { HttpMethod = "GET", UpdateTargetId = "KetQua", InsertionMode = InsertionMode.Replace, LoadingElementId = "LoadingAjax" })*@
+
+@*Cách 2 load Ajax bằng Beginform*@
+
+@*@using (Ajax.BeginForm("BeginformAjax", new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "KetQua", InsertionMode = InsertionMode.Replace, LoadingElementId = "LoadingAjax" }))
+    {
+        <input name="txtName" />
+        <input type="submit" value="Submit" />
+    }*@
+
+
+@Ajax.ActionLink("Demo Ajax MVC", "ActionAjax", new AjaxOptions { HttpMethod = "GET", UpdateTargetId = "KetQua", InsertionMode = InsertionMode.Replace, LoadingElementId = "LoadingAjax" })
+@using (Ajax.BeginForm("BeginFAjax", new AjaxOptions { HttpMethod = "Get", UpdateTargetId = "KetQua", InsertionMode = InsertionMode.Replace, LoadingElementId = "LoadingAjax" }))
+{
+    <input type="submit" value="Load ra tat ca san pham" class="btn btn-info" />
+}
+<input id="txtName" /><br />
+<input type="button" id="button" value="Ajax Jquery" class="btn btn-group-lg" />
+<div id="LoadingAjax" style="display:none">
+    <img src="~/Content/images/25.gif" />
+</div>
+<br />
+<div class="container">
+    <div class="content-top">
+        <div id="KetQua" style="height:150px;">
+            Ket qua tra ve
+            <br />
+
+        </div>
+    </div>
+</div>
+
+<script>
+    $('#button').click(function () {
+        $('#LoadingAjax').show();
+        var giatri = $('#txtName').val()
+        $.ajax({
+            type: 'Get',
+            data: { a: giatri },
+            url: 'AjaxJquery',
+            success: function (ketqua) {
+                $('#LoadingAjax').hide();
+                $('#KetQua').html(ketqua);
+            }
+        })
+    })
+</script>

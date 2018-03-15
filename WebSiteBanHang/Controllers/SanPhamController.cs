@@ -1,37 +1,57 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using WebSiteBanHang.Models;
 
 namespace WebSiteBanHang.Controllers
 {
-
     public class SanPhamController : Controller
     {
         QuanLyBanHangEntities db = new QuanLyBanHangEntities();
         // GET: SanPham
-        public ActionResult SanPham1()
+        public ActionResult Index()
         {
-            var lrtSanPham = db.SanPhams.Where(n => n.MaLoaiSP == 2 && n.Moi == 1);
-            ViewBag.ltrSP = lrtSanPham;
-            var lrtSanPhamDT = db.SanPhams.Where(n => n.MaLoaiSP == 1 );
-            ViewBag.ltrDT = lrtSanPhamDT;
             return View();
         }
-        public ActionResult SanPham2()
+
+        public ActionResult SanPhamStyle1Partial()
         {
-            var lrtSanPham = db.SanPhams.Where(n => n.MaLoaiSP == 2 && n.Moi == 1);
-            ViewBag.ltrSP = lrtSanPham;
-            return View();
-        }
-        [ChildActionOnly]
-        public ActionResult PartialSanPham()
-        {
-            //var lrtSanPham = db.SanPhams.Where(n => n.MaLoaiSP == 2 && n.Moi == 1);
-            //return PartialView(lrtSanPham);
+
             return PartialView();
         }
+        public ActionResult SanPhamStyle2Partial()
+        {
+            return PartialView();
+        }
+        public ActionResult XemSanPham(int? id,string tensp)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            SanPham sp = db.SanPhams.SingleOrDefault(n => n.MaSP == id && n.DaXoa == false);
+            if (sp == null)
+            {
+                return HttpNotFound();
+            }
+            return View(sp);
+        }
+        public ActionResult SanPham(int? maloai, int? mansx)
+        {
+            if (maloai == null || mansx == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            var sp = db.SanPhams.Where(n => n.MaLoaiSP == maloai && n.MaNSX == mansx && n.DaXoa == false);
+            if (sp == null)
+            {
+                return HttpNotFound();
+            }
+            return View(sp);
+        }
+
     }
 }
