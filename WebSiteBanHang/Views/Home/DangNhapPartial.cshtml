@@ -1,0 +1,94 @@
+﻿@using WebSiteBanHang.Models
+
+<div class="header-top">
+    <div class="container">
+        <div class="search">
+            <form>
+                <input type="text" value="Search " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
+                <input type="submit" value="Go">
+            </form>
+        </div>
+        <div class="header-left">
+            <ul>
+                @if (Session["TaiKhoan"] != null && Session["TaiKhoan"].ToString() != "")
+                {
+                    ThanhVien tv = (ThanhVien)Session["TaiKhoan"];
+                    <li><a>Chào @tv.HoTen</a></li>
+                    @Html.ActionLink("Đăng xuất","DangXuat","Home")
+                }
+                else
+                {
+                <li><a id="btDangNhap" href="#">Đăng Nhập</a></li>
+                <li><a id="btDangKy" href="register.html">Đăng Ký</a></li>
+                }
+            </ul>
+            <div class="cart box_1">
+                <a href="checkout.html">
+                    <h3>
+                        <div class="total">
+                            <span class="simpleCart_total">$0.00</span> (<span id="simpleCart_quantity" class="simpleCart_quantity">0</span> items)
+                        </div>
+                        <img src="~/Content/images/cart.png" alt="">
+                    </h3>
+                </a>
+                <p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
+
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+</div>
+
+
+<div>
+
+
+    <div id="popup-login">
+        <div class="login-form">
+            <div style="clear:both;text-align:right;margin-bottom:0;">
+                <span id="close-form" class="btn btn-danger">X</span>
+            </div>
+            <h2>Đăng Nhập</h2>
+            <div class="form-info">
+                @using (Html.BeginForm("DangNhap", "Home"))
+                {
+                    <input name="txtDangNhap" type="text" class="email" placeholder="Tai Khoan" required="">
+                    <input name="txtMatKhau" type="password" class="password" placeholder="Password" required="">
+                    <p><a href="#">Forgot password?</a></p>
+                    <ul class="login-buttons">
+                        <li><input type="submit" value="LOGIN"></li>
+                        <li><a href="#" class="hvr-sweep-to-left">REGISTER</a></li>
+                        <div class="clear"> </div>
+                    </ul>
+                }
+            </div>
+        </div>
+    </div>
+    <!--copyrights-->
+</div>
+
+<style>
+    #popup-login {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,.5);
+        z-index: 99;
+        display: none;
+    }
+</style>
+
+@*Dung jquery de an va hien popupdangnhap*@
+<script type="text/javascript">
+    $("#btDangNhap").click(function () {
+        $("#popup-login").show();
+    });
+    $("#close-form").click(Anform);
+    function Anform() {
+        $("#popup-login").css("display", "none");
+    };
+</script>
+

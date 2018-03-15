@@ -64,5 +64,23 @@ namespace WebSiteBanHang.Controllers
             listcauhoi.Add("Ban bao nhieu tuoi");
             return listcauhoi;
         }
+        [HttpPost]
+        public ActionResult DangNhap(FormCollection f)
+        {
+            string sTaiKhoan = f["txtDangNhap"].ToString();
+            string sMatKhau = f["txtMatKhau"].ToString();
+            ThanhVien tv = db.ThanhViens.SingleOrDefault(n => n.TaiKhoan == sTaiKhoan && n.MatKhau == sMatKhau);
+            if (tv != null)
+            {
+                Session["TaiKhoan"] = tv;
+                return RedirectToAction("Index");
+            }
+            return RedirectToAction("Index");
+        }
+        public ActionResult DangXuat()
+        {
+            Session["TaiKhoan"] = null;
+            return RedirectToAction("Index");
+        }
     }
 }
