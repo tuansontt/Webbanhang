@@ -48,9 +48,12 @@ namespace WebSiteBanHang.Controllers
             ViewBag.CauHoi = new SelectList(Listcauhoi());
             if (this.IsCaptchaValid("Capcha is not vali"))
             {
-                ViewBag.Thongbao = "Dang ky thanh cong";
-                db.ThanhViens.Add(tv);
-                db.SaveChanges();
+                if (ModelState.IsValid)
+                {
+                    ViewBag.Thongbao = "Dang ky thanh cong";
+                    db.ThanhViens.Add(tv);
+                    db.SaveChanges();
+                }
             }
             ViewBag.Thongbao = "Nhap sai ma capcha";
             return View();
@@ -73,9 +76,9 @@ namespace WebSiteBanHang.Controllers
             if (tv != null)
             {
                 Session["TaiKhoan"] = tv;
-                return RedirectToAction("Index");
+                return Content("<script>window.location.reload();</script>");
             }
-            return RedirectToAction("Index");
+            return Content("Tài khoản hoặc mật khẩu không đúng");
         }
         public ActionResult DangXuat()
         {

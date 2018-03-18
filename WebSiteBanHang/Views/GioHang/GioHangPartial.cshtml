@@ -1,0 +1,15 @@
+﻿@using WebSiteBanHang.Models;
+@model IEnumerable<ItemGioHang>
+
+<div class="cart box_1">
+    <a href="@Url.Action("XemGioHang","GioHang")">
+        <h3>
+            <div class="total">
+                <span class="simpleCart_total">$0.00</span> (<span id="simpleCart_quantity" class="simpleCart_quantity">0</span> items)
+            </div>
+            <img src="~/Content/images/cart.png" alt="">
+        </h3>
+    </a>
+    <p><a href="@Url.Action("XemGioHang","GioHang")" class="simpleCart_empty">Empty Cart</a></p>
+
+</div>

@@ -50,4 +50,3 @@ D:\ASP.net MVC\WebSiteBanHang\WebSiteBanHang\bin\System.Web.Helpers.xml
 D:\ASP.net MVC\WebSiteBanHang\WebSiteBanHang\bin\System.Web.Mvc.xml
 D:\ASP.net MVC\WebSiteBanHang\WebSiteBanHang\obj\Debug\WebSiteBanHang.dll
 D:\ASP.net MVC\WebSiteBanHang\WebSiteBanHang\obj\Debug\WebSiteBanHang.pdb
-D:\ASP.net MVC\WebSiteBanHang\WebSiteBanHang\obj\Debug\WebSiteBanHang.csprojResolveAssemblyReference.cache
