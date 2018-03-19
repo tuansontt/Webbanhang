@@ -13,6 +13,18 @@ namespace WebSiteBanHang.Models
         public decimal DonGia { set; get; }
         public string HinhAnh { set; get; }
         public decimal ThanhTien { set; get; }
+        public ItemGioHang(int iMaSP)
+        {
+            using (QuanLyBanHangEntities db = new QuanLyBanHangEntities())
+            {
+                SanPham sp = db.SanPhams.Single(n => n.MaSP == iMaSP);
+                this.TenSP = sp.TenSP;
+                this.DonGia = sp.DonGia.Value;
+                this.HinhAnh = sp.HinhAnh;
+                this.SoLuong = 1;
+                this.ThanhTien = SoLuong * DonGia;
+            }
+        }
         public ItemGioHang(int iMaSP, int sl)
         {
             using (QuanLyBanHangEntities db = new QuanLyBanHangEntities())
